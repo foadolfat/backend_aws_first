@@ -16,7 +16,7 @@ var dbconnection  = mysql.createPool({
     host            : 'fullstackdbinstance.cvhxiooi2cwh.us-east-2.rds.amazonaws.com',
     user            : 'admin',
     password        : 'password123',
-    database        : 'study_buddy_db'
+    database        : 'fullstackdb'
   });
 
 // var dbconnection  = mysql.createPool({
