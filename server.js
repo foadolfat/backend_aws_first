@@ -11,21 +11,21 @@ const saltRounds = 10;
 app.use(express.json());
 app.use(require('cors')());
 
-// var dbconnection  = mysql.createPool({
-//     connectionLimit : 10,
-//     host            : 'fullstackdbinstance.cvhxiooi2cwh.us-east-2.rds.amazonaws.com',
-//     user            : 'admin',
-//     password        : 'password123',
-//     database        : 'study_buddy_db'
-//   });
-
 var dbconnection  = mysql.createPool({
-  connectionLimit : 10,
-  host            : 'localhost',
-  user            : 'root',
-  password        : 'password123',
-  database        : 'study_buddy_db'
-});
+    connectionLimit : 10,
+    host            : 'fullstackdbinstance.cvhxiooi2cwh.us-east-2.rds.amazonaws.com',
+    user            : 'admin',
+    password        : 'password123',
+    database        : 'study_buddy_db'
+  });
+
+// var dbconnection  = mysql.createPool({
+//   connectionLimit : 10,
+//   host            : 'localhost',
+//   user            : 'root',
+//   password        : 'password123',
+//   database        : 'study_buddy_db'
+// });
 
 // app.get('/', function(req, res){
 //     res.sendFile(path.join(__dirname, 'build', 'index.html'));
