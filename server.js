@@ -9,7 +9,7 @@ const saltRounds = 10;
 
 // app.use(express.static(path.join(__dirname, 'build')));
 app.use(express.json());
-app.use(require('cors')());
+//app.use(require('cors')());
 
 var dbconnection  = mysql.createPool({
     connectionLimit : 10,
